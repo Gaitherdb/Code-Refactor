@@ -1,29 +1,30 @@
-* {
+/* Any additonal changes to width or height on any elements in this code will include the border  */
+* { 
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* sets the background color for the whole code to white */
 body {
     background-color: #d9dcd6;
 }
-
+/* changes font and text color while also overwritting the background color */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
+/* makes the text in the h1 header bigger and on the same line */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* When the .seo class is in the h1 and header, the letters seo color is changed to a darker white */
 header h1 .seo {
     color: #d9dcd6;
 }
-
+/* Forces anything in the navigation bar to the right while changing its font and size */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -31,21 +32,22 @@ header nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/* gets rid of bullet points on the text in the lists on the nav bar */
 header nav ul {
     list-style-type: none;
 }
-
+/* Puts the listed text in the nav bar side by side */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Changes the link color to white and gets rid of the underline  */
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/* displays a background image. Gives size and positioning properties */
 .hero {
     height: 800px;
     width: 100%;
@@ -54,32 +56,32 @@ a {
     background-size: cover;
     background-position: center;
 }
-
+/* changes font for all text in paragraphs */
 p {
     font-size: 16px;
 }
-
+/* a class that shifts an image to the left */
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/* a class that shifts an image to the right */
 .float-right {
     float: right;
     margin-left: 25px;
 }
-
+/* Gives properties to the main content = search engine optim, online-reputation-management social-media-marketing, like size and makes sure it's the text and img are displayed side by side */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-
+/* changes font size of the header text within the main content */
 .content h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/* Gives each section of the main content the same properties, while keeping them different classes in case for future changes. Changes font, background color, text color and font */
 .search-engine-optimization, .online-reputation-management, .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
@@ -88,10 +90,11 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+/* changes the height of the images within each separate content box */
 .search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
     max-height: 200px;
 }
-
+/* Gives properties to the content on the sidebar like font, background color, size and positoning */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -103,32 +106,30 @@ p {
     background-color: #2589bd;
   
 }
-
+/* adjusts positioning and color of the text in the side bar. It could be added to the benefits class because they are all the time, but is left separate to make future changes to each box easy */
+.benefit-lead, .benefit-brand, .benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+/* Displays the images in the side bar horizontal while changing size */
 .benefit-lead img, .benefit-brand img, .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
-.benefit-lead, .benefit-brand, .benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-
+/* aligns the header text in the sidebar to be centered while giving space underneath the text */
 .benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
-
+/* Changes font and centers the footer at the bottom. Ensures it stays at the bottom and clear of any floating images that may come in the futre */
 footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
+/* changes the font size for the header in the footer */
 footer h4 {
    font-size: 20px;
 }
